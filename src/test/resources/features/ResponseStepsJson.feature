@@ -1,4 +1,4 @@
-@ResponseMatch
+@ResponseMatch @ignore
 Feature: Testing out the request step definitions for JSON
 
   @Smoke @Json @ResponseCache

@@ -1,4 +1,4 @@
-@BasicSteps
+@BasicSteps @ignore
 Feature: Testing out the basic step definitions for JSON
 
   @Json @Smoke

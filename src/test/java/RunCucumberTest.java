@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = {"classpath:features"},
-    plugin = {"pretty", "json:target/cucumber/cucumber.json"}
+    plugin = {"pretty", "json:target/cucumber/cucumber.json"},
+    tags = "not @ignore"
 )
 public class RunCucumberTest {
 

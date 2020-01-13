@@ -1,4 +1,4 @@
-@Headers
+@Headers @ignore
 Feature: Testing out the parameter step definitions
 
  @Smoke
