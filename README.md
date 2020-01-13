@@ -1,6 +1,7 @@
 **Quick Links:** [User Guide](docs/USERGUIDE.md) | [Running](docs/RUNNING.md) | [Grammar](docs/GRAMMAR.md)
 
-
+Report generation:
+allure generate target/allure-results --clean && allure open
 
 No longer do your business, development and testing teams need to translate each others requirements and reports into something else to do their job.  This natural language, [behavior-driven development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development) library exists to simplify the documenting of requirements and the testing of your API's.
 
