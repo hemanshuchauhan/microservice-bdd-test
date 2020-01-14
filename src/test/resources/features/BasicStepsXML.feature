@@ -4,9 +4,9 @@ Feature: Testing out the basic step definitions for SOAP
   @Smoke @RemoteServer
   Scenario: Simple SOAP endpoint (BSS1)
     Given I am a XML API consumer
-      And I am executing test "BSS1"
-     When I request GET "/CountryInfoService.wso" on "http://webservices.oorsprong.org/websamples.countryinfo"
-      And I set the XML body to
+    And I am executing test "BSS1"
+    When I request GET "/CountryInfoService.wso" on "http://webservices.oorsprong.org/websamples.countryinfo"
+    And I set the XML body to
       """
         <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
             <Body>
@@ -14,14 +14,14 @@ Feature: Testing out the basic step definitions for SOAP
             </Body>
         </Envelope>
       """
-     Then I should get a status code of 200
+    Then I should get a status code of 200
 
   @Smoke @RemoteServer
   Scenario: Simple SOAP endpoint with SOAPAction (BSS2)
     Given I am a XML API consumer
-      And I am executing test "BSS2"
-     When I request GET "/CountryInfoService.wso" on "http://webservices.oorsprong.org/websamples.countryinfo"
-      And I set the SOAPAction to "http://www.SoapClient.com/SQLDataSQL" and body as
+    And I am executing test "BSS2"
+    When I request GET "/CountryInfoService.wso" on "http://webservices.oorsprong.org/websamples.countryinfo"
+    And I set the SOAPAction to "http://www.SoapClient.com/SQLDataSQL" and body as
       """
         <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
             <Body>
@@ -34,6 +34,6 @@ Feature: Testing out the basic step definitions for SOAP
             </Body>
         </Envelope>
       """
-     Then I should get a status code of 200
+    Then I should get a status code of 200
 
 

@@ -4,9 +4,9 @@ Feature: Testing out faker transformers
   @Smoke @Json @Cache @ResponseMatch
   Scenario: Testing generating a few types of props and validation from cache (FT2)
     Given I am a JSON API consumer
-      And I am executing test "FT2"
-     When I request GET "/mirror"
-      And I set the JSON body to
+    And I am executing test "FT2"
+    When I request GET "/mirror"
+    And I set the JSON body to
       """
       {
         "lead": {
@@ -23,16 +23,16 @@ Feature: Testing out faker transformers
         }
       }
       """
-     Then I should get a status code of 200
-      And the response value of "lead.leadId" should equal "{{cache::leadId}}"
-      And the response value of "lead.address.city" should equal "{{cache::city}}"
+    Then I should get a status code of 200
+    And the response value of "lead.leadId" should equal "{{cache::leadId}}"
+    And the response value of "lead.address.city" should equal "{{cache::city}}"
 
   @Smoke @Json @Cache @ResponseMatch @Lang
   Scenario Outline: Testing generating a few types of props and validation from cache (FT2)
     Given I am a JSON API consumer
-      And I am executing test "FT2"
-     When I request GET "/mirror"
-      And I set the JSON body to
+    And I am executing test "FT2"
+    When I request GET "/mirror"
+    And I set the JSON body to
       """
       {
         "lead": {
@@ -49,30 +49,30 @@ Feature: Testing out faker transformers
         }
       }
       """
-     Then I should get a status code of 200
-      And the response value of "lead.leadId" should equal "{{cache::leadId}}"
-      And the response value of "lead.address.city" should equal "{{cache::city}}"
+    Then I should get a status code of 200
+    And the response value of "lead.leadId" should equal "{{cache::leadId}}"
+    And the response value of "lead.address.city" should equal "{{cache::city}}"
 
     Examples:
-    | LANG    |
-    | en-US   |
-    | ru      |
-    | zh-CN   |
-    | fr      |
+      | LANG  |
+      | en-US |
+      | ru    |
+      | zh-CN |
+      | fr    |
 
   @Smoke @Json @GPath @ResponseMatch
   Scenario: Test setting up JSON as table with generation (FT3)
     Given I am a JSON API consumer
-      And I am executing test "BSJ2"
-     When I request GET "/mirror"
-      And I set the JSON body from values
-      | users[0].id        | 1                                    |
-      | users[0].name      | {{faker::name.firstName,en-US::n}}   |
-      | users[0].favorites | 1,2,3                                |
-      | users[0].active    | true                                 |
-      | users[1].id        | 2                                    |
-      | users[1].name      | Bob                                  |
-      | users[1].favorites | 4,7,9                                |
-      | users[1].active    | false                                |
-     Then I should get a status code of 200
-      And the response value of "users[0].name" should equal "{{cache::n}}"
+    And I am executing test "BSJ2"
+    When I request GET "/mirror"
+    And I set the JSON body from values
+      | users[0].id        | 1                                  |
+      | users[0].name      | {{faker::name.firstName,en-US::n}} |
+      | users[0].favorites | 1,2,3                              |
+      | users[0].active    | true                               |
+      | users[1].id        | 2                                  |
+      | users[1].name      | Bob                                |
+      | users[1].favorites | 4,7,9                              |
+      | users[1].active    | false                              |
+    Then I should get a status code of 200
+    And the response value of "users[0].name" should equal "{{cache::n}}"
