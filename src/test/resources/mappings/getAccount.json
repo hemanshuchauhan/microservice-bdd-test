@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "accounts/8e79edcf-01e7-2fa0-890e-243baa82c7fb",
+    "headers": {
+      "x-lbg-brand": {
+        "matches": "IF"
+      },
+      "x-lbg-txn-correlation-id": {
+        "matches": "1111111111"
+      },
+      "Authorization": {
+        "matches": "Bearer 6L5UQiZ4NgNt2OgGq8qxHZxJ3uNb"
+      },
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Data": {
+        "Account": [
+          {
+            "AccountId": "8e79edcf-01e7-2fa0-890e-243baa82c7fb",
+            "NickName": "Vivek's Current Account",
+            "Account": [
+              {
+                "schemeName": "UK.OBIE.SortCodeAccountNumber",
+                "identification": "11912092085439"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
