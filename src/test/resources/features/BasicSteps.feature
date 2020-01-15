@@ -1,4 +1,4 @@
-@BasicSteps @Smoke @Regression
+@BasicSteps @Smoke @Regression @ignore
 Feature: Testing out the basic step definitions for JSON
 
   @Overides @Json @RemoteServer
