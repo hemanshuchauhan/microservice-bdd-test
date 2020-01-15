@@ -1,4 +1,4 @@
-@Faker
+@Faker @ignore
 Feature: Testing out the variable transformer
 
   @Smoke @Json @Vars @ResponseMatch

@@ -1,4 +1,4 @@
-@Xml
+@Xml @ignore
 Feature: Testing out the basic step definitions for SOAP
 
   @Smoke @RemoteServer

@@ -1,4 +1,4 @@
-@Advanced @Beta @Regression
+@Advanced @Beta @Regression @ignore
 Feature: Starter tests for beta functionality
 
   @Html @RemoteServer @ResponseMatch

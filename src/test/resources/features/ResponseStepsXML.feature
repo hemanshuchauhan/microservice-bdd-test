@@ -1,3 +1,4 @@
+@ignore
 Feature: Testing out the request step definitions for SOAP
 
   Scenario: Request chaining & simple cache test (RSS0)

@@ -1,4 +1,4 @@
-@Faker
+@Faker @ignore
 Feature: Testing out faker transformers
 
   @Smoke @Json @Cache @ResponseMatch
