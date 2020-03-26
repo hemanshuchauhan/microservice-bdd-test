@@ -6,7 +6,7 @@ No longer do your business, development and testing teams need to translate each
 
 Built on <a href="https://cucumber.io/" target="_blank">Cucumber</a> and <a href="http://rest-assured.io/" target="_blank">Rest Assured</a>, this library provides a [standard grammar](docs/GRAMMAR.md) (based on Gherkin) that all teams within your organization can use to relay requirements and test your applications.
 
-*Example*
+*Example* 
 
 ```gherkin
     Given I am a JSON API consumer
