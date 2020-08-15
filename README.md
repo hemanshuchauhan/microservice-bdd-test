@@ -21,7 +21,7 @@ Although there are libraries like <a href="https://github.com/intuit/karate" tar
 
 This library was born out of this frustration. 
 
-### Why BDD For All?
+### Why BDD For All??
 
 Requirements, always being interpreted from one document format (user story, technical docs, test cases, etc...) to another, create an additional overhead. Even worse, things often get lost or misinterpreted in translation.  We don't have time for that in one or two week sprints.
 
