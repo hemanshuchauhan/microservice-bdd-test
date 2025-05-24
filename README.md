@@ -25,7 +25,7 @@ This library was born out of this frustration.
 
 Requirements, always being interpreted from one document format (user story, technical docs, test cases, etc...) to another, create an additional overhead. Even worse, things often get lost or misinterpreted in translation.  We don't have time for that in one or two week sprints.
 
-This library provides a lot of help out of the box to fix this...
+This library provides a lot of help out of the box to fix this...  Srini
 
 * Simplifies and streamlines your Test Driven Development (TDD) flows.
 * Simple [integration with build tools](docs/RUNNING.md#running) (Maven, Gradle, & SBT) as well as your DevOps pipelines (Jenkins, Bamboo, CircleCI, etc...).
